@@ -1,14 +1,21 @@
 *
 {
-    margin: 0;
+    margin: 9;
     padding: 0;
     box-sizing: border-box;
     font-family: monospace;
 }
+/*CHANE color and font later*/
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background-color: teal;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    
 }
