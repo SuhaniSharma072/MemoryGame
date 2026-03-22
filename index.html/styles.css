@@ -1,6 +1,6 @@
-*
-{
-    margin: 9;
+
+*{
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: monospace;
@@ -17,5 +17,50 @@ body{
 .container{
     position: relative;
     display: flex;
-    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: aquamarine;
+    padding: 40px 60px;
 }
+
+h2{
+    font-size: 48px;
+    color:#fff;
+   
+    letter-spacing: 1px;
+}
+
+.reset{
+    padding: 15px 20px;
+    color: teal;
+    background: #fff;
+    border:none;
+    font-size: 1.5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer ;
+    font-weight: 600;
+}
+
+.reset:focus{
+    background: teal;
+    color:#fff;
+}
+
+.game{
+width: 440px;
+height: 440px;
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+transform-style: preserve-3d;
+perspective: 500px;
+}
+
+.item  {
+    position:relative; 
+}
+
+
