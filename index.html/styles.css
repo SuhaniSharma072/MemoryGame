@@ -11,7 +11,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: teal;
+    background-color: purple;
 }
 
 .container{
@@ -21,7 +21,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 30px;
-    background-color: aquamarine;
+    background-color: plum;
     padding: 40px 60px;
 }
 
@@ -34,7 +34,7 @@ h2{
 
 .reset{
     padding: 15px 20px;
-    color: teal;
+    color: purple;
     background: #fff;
     border:none;
     font-size: 1.5px;
@@ -45,13 +45,13 @@ h2{
 }
 
 .reset:focus{
-    background: teal;
+    background: purple;
     color:#fff;
 }
 
 .game{
-width: 440px;
-height: 440px;
+width: 430px;
+height: 430px;
 display: flex;
 flex-wrap: wrap;
 gap: 10px;
@@ -61,6 +61,35 @@ perspective: 500px;
 
 .item  {
     position:relative; 
+    width: 100px;
+    height:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    transform: rotateY(180deg);
+    background-color: #fff;
+    transition: 0.25s;
 }
 
+.item.boxOpen{
+    transform: rotateY(0deg);
+}
+
+
+.item:after{
+    content:'';
+    position:absolute;
+    inset:0;
+    background: violet;
+   
+    transition: 0.25s;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+}
+
+.boxOpen:after, 
+.boxMatch:after{
+    transform: rotateY(180deg);
+}
 
