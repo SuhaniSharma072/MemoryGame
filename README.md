@@ -5,3 +5,4 @@ How I Made It
 JavaScript creates and shuffles the cards, handles click events, and detects wins. CSS handles the 3D card-flip animation using rotateY transforms and backface-visibility.
 What I Struggled With & What I Learned:
 Clicking a third card during the pair-checking delay broke the game logic : I fixed this with a boolean  (isChecking). I also learned that tiny typos like a missing on-click instead of onclick can break features with no error message.
+(the site was just published using vercel, which might look like AI was used, because the submission form wasn't accepting the demo link from github. all the code you see on github was written by me. )
